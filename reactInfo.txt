@@ -1,0 +1,67 @@
+In this part (part 1), we will
+Initialize our backend using npm and install necessary packages
+Set up a MongoDB database using mLab
+Set up a server with Node.js and Express
+Create a database schema to define a User for registration and login purposes
+Set up two API routes, register and login, using passport + jsonwebtokens for authentication and validator for input validation
+Test our API routes using Postman
+
+----------Setting up Our React + Express.js Project-----------
+
+1. need to install if not present in your system
+npm install -g create-react-app
+
+2. Now that we have the CLI installed globally, we can create our first React application:
+npx create-react-app hello-world
+
+3. We are going to use axios module for sending requests to backend and material ui kit to create ui components since they are responsive and have nice animations. Let install them with the following command: 
+
+npm install --save material-ui axios react-tap-event-plugin
+
+4.Install & Set Up Bootstrap 4 in React
+npm install bootstrap --save
+
+5. Enable Routing in React
+
+npm install --save react-router-dom
+
+------------Create components react generates react component folder(s).
+npm install -g create-components-react
+ccr create Nav/NavItem
+
+------------Installing JSON Server
+1. npm install -g json-server
+2. json-server --watch db.json
+
+------------Fake json server (https://min-api.cryptocompare.com/data/all/coinlist)
+1. npm init
+2. npm install faker
+
+3. create another file (employees.js)
+// employees.js
+var faker = require('faker')
+function generateEmployees () {
+  var employees = []
+  for (var id = 0; id < 50; id++) {
+    var firstName = faker.name.firstName()
+    var lastName = faker.name.lastName()
+    var email = faker.internet.email()
+    employees.push({
+      "id": id,
+      "first_name": firstName,
+      "last_name": lastName,
+      "email": email
+    })
+  }
+  return { "employees": employees }
+}
+module.exports = generateEmployees
+
+4. json-server employees.js
+
+------------
+npm install -g trot
+trot comp -c Parent     /* Creates new react components 'Parent' */
+trot nest Parent Child  /* Nests child components in render function of parent */
+trot --h
+

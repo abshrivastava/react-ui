@@ -1,0 +1,25 @@
+{
+    "user1" : {
+       "fname" : "mahesh",
+       "lname" : "kumar",
+       "password" : "password1",
+       "email" : "ex@gmail.com",
+       "id": 1
+    },
+    
+    "user2" : {
+      "fname" : "ganesh",
+      "lname" : "kumar",
+      "password" : "password1",
+      "email" : "ex@gmail.com",
+      "id": 2
+    },
+    
+    "user3" : {
+      "fname" : "suraj",
+      "lname" : "kumar",
+      "password" : "password1",
+      "email" : "ex@gmail.com",
+      "id": 3
+    }
+ }
